@@ -33,8 +33,9 @@ const Home = () => {
     <ScrollView showsVerticalScrollIndicator>
         <View>
             <Welcome/>
-            <Nearbyjobs/>
             <Popularjobs/>
+            <Nearbyjobs/>
+            
         </View>
 
     </ScrollView>

@@ -16,9 +16,11 @@ const Layout = () => {
     if (fontsloaded) {
         await SplashScreen.hideAsync();
     }
-  })
+  }, [fontsloaded])
+
+  if(!fontsloaded) return null;
 
 
-  return <Stack />;
+  return <Stack onLayout={onLayoutRootView} />;
 };
 export default Layout;
